@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pink</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav_logo" href=""
+          ><picture>
+            <!-- Изображение для экрана мобильного телефона -->
+            <source
+              media="(max-width: 650px)"
+              srcset="img/pink.svg"
+              width="74px"
+              height="23px"
+            />
+
+            <!-- Изображение для экрана планшета -->
+            <source
+              media="(min-width: 651px) and (max-width: 1185px)"
+              srcset="img/logotype-white-tablet.svg"
+              width="145px"
+              height="40px"
+            />
+
+            <!-- Изображение для рабочего стола -->
+            <source
+              media="(min-width: 1185px)"
+              srcset="img/logotype-desktop.svg"
+              width="147px"
+              height="40px"
+            />
+
+            <!-- Изображение по умолчанию для старых браузеров -->
+            <img
+              src="img/logotype-desktop.svg"
+              alt="Логити приложения Pink"
+              width="147px"
+              height="40px"
+            /> </picture
+        ></a>
+
+        <!-- Меню сайта -->
+        <ul class="main-nav_list">
+          <li class="main-nav_list-item">
+            <a href="#" class="main-nav_link">Главная</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="photo-catalog.html" class="main-nav_link">Фотографии</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="form.html" class="main-nav_link">Конкурс</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="" class="main-nav_link">HTML Academy</a>
+          </li>
+        </ul>
+
+        <!-- копка бургер для мобильного меню -->
+        <button class="main-nav_burger-button">
+          <div class="main-nav_burger-icon"></div>
+        </button>
+      </nav>
+    </header>
+    <main class="page-main">
+      <!-- шапка основной части сайта -->
+      <header class="main-header">
+        <h2 class="main-header_title">Взгляните на жизнь иначе</h2>
+
+        <!-- Секция с кнопками для скачивания приложения -->
+        <section class="download-buttons">
+          <button class="download-buttons_download-button">
+            <span class="download-buttons_download-button-description"
+              >Скачать приложение</span
+            >
+          </button>
+          <!-- список кнопок для разных устройств -->
+          <ul class="download-buttons_list">
+            <li class="download-buttons_list-item">
+              <button
+                class="download-buttons_button"
+                title="Скачать для iPhone"
+              >
+                <img
+                  class="download-buttons_apple-icon"
+                  src="img/apple-logo.png"
+                  alt="Скачать для iPhone"
+                  width="47px"
+                  height="56px"
+                />
+              </button>
+            </li>
+            <li class="download-buttons_list-item">
+              <button
+                class="download-buttons_button"
+                title="Скачать для Android"
+              >
+                <img
+                  class="download-buttons_android-icon"
+                  src="img/android-logo.png"
+                  alt="Скачать для Android"
+                  width="43px"
+                  height="47px"
+                />
+              </button>
+            </li>
+            <li class="download-buttons_list-item">
+              <button
+                class="download-buttons_button"
+                title="Скачать для Windows Phone"
+              >
+                <img
+                  class="download-buttons_microsoft-icon"
+                  src="img/microsoft-logo.png"
+                  alt="Скачать для Windows Phone"
+                  width="44px"
+                  height="41px"
+                />
+              </button>
+            </li>
+          </ul>
+          <p class="download-buttons_description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </section>
+      </header>
+      <!-- секция преимуществ -->
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="advantages_tagline advantages_tagline--first">
+          Устали от серости мегаполиса?
+        </p>
+        <p class="advantages_tagline advantages_tagline--second">
+          Нам есть, что вам предложить!
+        </p>
+        <ul class="advantages_list">
+          <li class="advantages_list-item">
+            <h3 class="advantages_list-item-title">Поднимает настроение</h3>
+            <img
+              class="advantages_list-item-image"
+              src="img/advantage-iphone-1.png"
+              alt="Изображение смартфона с открытым приложением"
+              width="186"
+              height="382"
+            />
+            <p class="advantages_list-item-description">
+              Приложение позволит вам победить осеннюю хандру и депрессию
+              буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="advantages_list-item">
+            <h3 class="advantages_list-item-title">Меняет мир вокруг</h3>
+            <img
+              class="advantages_list-item-image"
+              src="img/advantage-iphone-2.png"
+              alt="Изображение смартфона с открытым приложением"
+              width="186"
+              height="382"
+            />
+            <p class="advantages_list-item-description">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью,
+              чтобы усилить эффект
+            </p>
+          </li>
+          <li class="advantages_list-item">
+            <h3 class="advantages_list-item-title">Заводит новых друзей</h3>
+            <img
+              class="advantages_list-item-image"
+              src="img/advantage-iphone-3.png"
+              alt="Изображение смартфона с открытым приложением"
+              width="186"
+              height="382"
+            />
+            <p class="advantages_list-item-description">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите новых
+            </p>
+          </li>
+        </ul>
+        <img
+          class="advantages_mobile-image"
+          src="img/advantages_mobile-image.png"
+          alt="Изображение смартфона с открытым приложением"
+        />
+        <img
+          class="advantages_tablet-image"
+          src="img/advantages-tablet-image.png"
+          alt="Изображение смартфона с открытым приложением"
+        />
+      </section>
+      <!-- секция с таймером -->
+      <section class="additionally">
+        <div>
+          <h2 class="additionally_title">Эффект на 24 часа!</h2>
+          <p class="additionally_description">
+            Британские ученые провели исследования и доказали, что положительный
+            эффект от использования приложения длится целые сутки!
+          </p>
+          <a class="additionally_link" href="">Узнать больше об исследовании</a>
+        </div>
+
+        <img
+          class="additionally_timer-image"
+          src="img/timer-tablet.png"
+          alt="Изображение таймера 24 часа"
+          width="238px"
+          height="267px"
+        />
+        <img
+          class="additionally_timer-image--desktop"
+          src="img/timer-desktop.png"
+          alt="Изображение таймера 24 часа"
+          width="298px"
+          height="345px"
+        />
+      </section>
+      <!-- сдайдер с цитатами -->
+      <section class="slider-quotes">
+        <!-- Картинка с ковычками -->
+        <img
+          class="slider-quotes_quote-image"
+          src="img/quotes.svg"
+          alt="Ковычки"
+          width="79px"
+          height="63px"
+          draggable="false"
+        />
+        <!-- список слайдов -->
+        <ul class="slider-quotes_slider-list">
+          <li class="slide">
+            <p class="slide_author">Николай Петров</p>
+            <p class="slide_author-description">25 лет, водитель трамвая</p>
+            <blockquote class="slide_quote">
+              «Приложение Pink - это моя модная вдохновляющая платформа.
+              Стильные образы, актуальные тренды и возможность делиться своим
+              стилем с сообществом. Люблю Pink за его стильную и дружественную
+              атмосферу!»
+            </blockquote>
+
+            <button class="left-arrow" id="left-arrow-1">
+              <img
+                src="img/left-arrow.svg"
+                alt=""
+                draggable="false"
+                alt="стрелка влево"
+                width="22px"
+                height="41px"
+              />
+            </button>
+
+            <button class="right-arrow" id="right-arrow-1">
+              <img
+                src="img/right-arrow.svg"
+                draggable="false"
+                alt="стрелка вправо"
+                width="22px"
+                height="41px"
+              />
+            </button>
+          </li>
+          <li class="slide">
+            <p class="slide_author">Мария Кузнецова</p>
+            <p class="slide_author-description">25 лет, водитель трамвая</p>
+            <blockquote class="slide_quote">
+              «Приложение Pink - это моя модная вдохновляющая платформа.
+              Стильные образы, актуальные тренды и возможность делиться своим
+              стилем с сообществом. Люблю Pink за его стильную и дружественную
+              атмосферу!»
+            </blockquote>
+            <button class="left-arrow" id="left-arrow-2">
+              <img
+                src="img/left-arrow.svg"
+                alt=""
+                draggable="false"
+                alt="стрелка влево"
+                width="22px"
+                height="41px"
+              />
+            </button>
+
+            <button class="right-arrow" id="right-arrow-2">
+              <img
+                src="img/right-arrow.svg"
+                draggable="false"
+                alt="стрелка вправо"
+                width="22px"
+                height="41px"
+              />
+            </button>
+          </li>
+          <li class="slide">
+            <p class="slide_author">Олег Баканов</p>
+            <p class="slide_author-description">25 лет, водитель трамвая</p>
+            <blockquote class="slide_quote">
+              «Приложение Pink - это моя модная вдохновляющая платформа.
+              Стильные образы, актуальные тренды и возможность делиться своим
+              стилем с сообществом. Люблю Pink за его стильную и дружественную
+              атмосферу!»
+            </blockquote>
+            <button class="left-arrow" id="left-arrow-3">
+              <img
+                src="img/left-arrow.svg"
+                alt=""
+                draggable="false"
+                alt="стрелка влево"
+                width="22px"
+                height="41px"
+              />
+            </button>
+
+            <button class="right-arrow" id="right-arrow-3">
+              <img
+                src="img/right-arrow.svg"
+                draggable="false"
+                alt="стрелка вправо"
+                width="22px"
+                height="41px"
+              />
+            </button>
+          </li>
+        </ul>
+        <!-- список радио кнопок -->
+        <ul class="breadcrumbs_list">
+          <li class="breadcrumbs_list-item">
+            <input
+              class="breadcrumbs_radio-button"
+              type="radio"
+              name="breadcrumbs-button"
+              id="breadcrumbs-button-1"
+              checked
+            />
+          </li>
+          <li class="breadcrumbs_list-item">
+            <input
+              class="breadcrumbs_radio-button"
+              type="radio"
+              name="breadcrumbs-button"
+              id="breadcrumbs-button-2"
+            />
+          </li>
+          <li class="breadcrumbs_list-item">
+            <input
+              class="breadcrumbs_radio-button"
+              type="radio"
+              name="breadcrumbs-button"
+              id="breadcrumbs-button-3"
+            />
+          </li>
+        </ul>
+      </section>
+      <!-- Секция с таблицей -->
+      <section class="order-table">
+        <div class="order-table_wrapper">
+          <table class="order-table_table">
+            <tr>
+              <th class="order-table_table-header"></th>
+              <th class="order-table_table-header">
+                <h3 class="order-table_title">База</h3>
+                <p class="order-table_price">1,99 usd</p>
+              </th>
+              <th class="order-table_table-header">
+                <h3 class="order-table_title">Стандарт</h3>
+                <p class="order-table_price">3,99 usd</p>
+              </th>
+              <th class="order-table_table-header">
+                <h3 class="order-table_title">Анлим</h3>
+                <p class="order-table_price">9,99 usd</p>
+              </th>
+            </tr>
+            <tr>
+              <td class="order-table_table-cell">
+                <p
+                  class="order-table_text-content order-table_text-content--first"
+                >
+                  Розовый фильтр
+                </p>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Розовый фильтр</p>
+                  <img
+                    class="order-table_green-check-mark"
+                    src="img/yes.svg"
+                    alt="Зеленая галочка"
+                    width="31px"
+                    height="21px"
+                  />
+                </div>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Розовый фильтр</p>
+                  <img
+                    class="order-table_green-check-mark"
+                    src="img/yes.svg"
+                    alt="Зеленая галочка"
+                    width="31px"
+                    height="21px"
+                  />
+                </div>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Розовый фильтр</p>
+                  <img
+                    class="order-table_green-check-mark"
+                    src="img/yes.svg"
+                    alt="Зеленая галочка"
+                    width="31px"
+                    height="21px"
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="order-table_table-cell">
+                <p
+                  class="order-table_text-content order-table_text-content--first"
+                >
+                  Смайлики
+                </p>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Смайлики</p>
+                  <img
+                    class="order-table_red-check-mark"
+                    src="img/no.svg"
+                    alt="Красный крестик"
+                    width="27px"
+                    height="27px"
+                  />
+                </div>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Смайлики</p>
+                  <img
+                    class="order-table_green-check-mark"
+                    src="img/yes.svg"
+                    alt="Зеленая галочка"
+                    width="31px"
+                    height="21px"
+                  />
+                </div>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Смайлики</p>
+                  <img
+                    class="order-table_green-check-mark"
+                    src="img/yes.svg"
+                    alt="Зеленая галочка"
+                    width="31px"
+                    height="21px"
+                  />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="order-table_table-cell">
+                <p
+                  class="order-table_text-content order-table_text-content--first"
+                >
+                  Комментарии
+                </p>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Комментарии</p>
+                  <img
+                    class="order-table_red-check-mark"
+                    src="img/no.svg"
+                    alt="Красный крестик"
+                    width="27px"
+                    height="27px"
+                  />
+                </div>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Комментарии</p>
+                  <img
+                    class="order-table_red-check-mark"
+                    src="img/no.svg"
+                    alt="Красный крестик"
+                    width="27px"
+                    height="27px"
+                  />
+                </div>
+              </td>
+              <td class="order-table_table-cell">
+                <div class="order-table_content-wrapper">
+                  <p class="order-table_text-content">Комментарии</p>
+                  <img
+                    class="order-table_green-check-mark"
+                    src="img/yes.svg"
+                    alt="Зеленая галочка"
+                    width="31px"
+                    height="21px"
+                  />
+                </div>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!-- список кнопок изменен, изменен класс самого списка, имена и id кнопок -->
+        <ul class="breadcrumbs-table-button_list">
+          <li class="breadcrumbs_list-item">
+            <input
+              class="breadcrumbs_radio-button"
+              type="radio"
+              name="breadcrumbs-table-button"
+              id="breadcrumbs-table-button-1"
+            />
+          </li>
+          <li class="breadcrumbs_list-item">
+            <input
+              class="breadcrumbs_radio-button"
+              type="radio"
+              name="breadcrumbs-table-button"
+              id="breadcrumbs-table-button-2"
+              checked
+            />
+          </li>
+          <li class="breadcrumbs_list-item">
+            <input
+              class="breadcrumbs_radio-button"
+              type="radio"
+              name="breadcrumbs-table-button"
+              id="breadcrumbs-table-button-3"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="main-contacts">
+        <h2 class="main-contacts_title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contact-list">
+          <li class="contact-list_item">
+            <h3 class="contact-list_item-title">Звоните:</h3>
+            <a class="contact-list_item-link" href="">+7 (812) 555-66-66</a>
+          </li>
+          <li class="contact-list_item">
+            <h3 class="contact-list_item-title">Пишите:</h3>
+            <a class="contact-list_item-link" href="">mail@htmlacademy.ru</a>
+          </li>
+          <li class="contact-list_item">
+            <h3 class="contact-list_item-title">Приезжайте в гости:</h3>
+            <a class="contact-list_item-link" href=""
+              >ул. Большая Конюшенная, 19/8</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="map">
+        <svg
+          class="map-svg"
+          viewBox="0 0 1200 123"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M599.5 123L-120 0H1319L599.5 123Z" fill="white" />
+        </svg>
+
+        <div style="position: relative; overflow: hidden">
+          <a
+            href="https://yandex.com.ge/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps"
+            style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+            >Санкт‑Петербург</a
+          ><a
+            href="https://yandex.com.ge/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323572%2C59.937881&mode=search&sctx=ZAAAAAgAEAAaKAoSCRNDcjJx0URAERsuck9X00RAEhIJfEYiNIKNzz8R4rA08KMauj8iBgABAgMEBSgKOABAplBIAWoCdWGdAc3MTD2gAQCoAQC9AZCRzvrCAQIAAOoBAPIBAPgBAIICL9GD0LsuINCR0L7Qu9GM0YjQsNGPINCa0L7QvdGO0YjQtdC90L3QsNGPLCAxOS84igIAkgIAmgIMZGVza3RvcC1tYXBz&sll=30.323036%2C59.938631&sspn=0.014882%2C0.004118&text=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%2019%2F8&utm_medium=mapframe&utm_source=maps&z=17.45"
+            style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+            >Большая Конюшенная улица, 19/8 — Яндекс Карты</a
+          ><iframe
+            class="yandex-map"
+            src="https://yandex.com/map-widget/v1/?ll=30.323572%2C59.937881&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzM5NDE4NBJh0KDQvtGB0YHQuNGPLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQu9C40YbQsCwgMTkvOCIKDZaV8kEVKcFvQg%2C%2C&sctx=ZAAAAAgAEAAaKAoSCRNDcjJx0URAERsuck9X00RAEhIJfEYiNIKNzz8R4rA08KMauj8iBgABAgMEBSgKOABAplBIAWoCdWGdAc3MTD2gAQCoAQC9AZCRzvrCAQIAAOoBAPIBAPgBAIICL9GD0LsuINCR0L7Qu9GM0YjQsNGPINCa0L7QvdGO0YjQtdC90L3QsNGPLCAxOS84igIAkgIAmgIMZGVza3RvcC1tYXBz&sll=30.323036%2C59.938631&sspn=0.014882%2C0.004118&text=%D1%83%D0%BB.%20%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F%20%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%2C%2019%2F8&z=17.45"
+            frameborder="1"
+            allowfullscreen="true"
+            style="position: relative"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer_logo-link" href="#"
+        ><img class="footer_logo" src="img/logotype-blue-tablet.svg" alt=""
+      /></a>
+      <ul class="social-list">
+        <li class="social-list_item">
+          <a class="social-list_link" href=""
+            ><img
+              class="social-list_icon-twitter"
+              src="img/twitter.svg"
+              alt="Twitter"
+          /></a>
+        </li>
+        <li class="social-list_item">
+          <a class="social-list_link" href=""
+            ><img
+              class="social-list_icon-facebook"
+              src="img/facebook.svg"
+              alt="Facebook"
+          /></a>
+        </li>
+        <li class="social-list_item">
+          <a class="social-list_link" href=""
+            ><img
+              class="social-list_icon-youtube"
+              src="img/youtube.svg"
+              alt="YouTube"
+          /></a>
+        </li>
+      </ul>
+      <a class="footer_copyright">
+        <p class="footer_copyright-text">Разработано</p>
+        <svg
+          width="27"
+          height="34"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.643.016L13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256zm0-11.564l-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237z"
+            fill="#D22856"
+          />
+        </svg>
+      </a>
+    </footer>
+    <script src="js/burger-menu.min.js"></script>
+    <script src="js/slider-quotes.min.js"></script>
+    <script src="js/table-slider.min.js"></script>
+    <script src="js/nav.min.js"></script>
+  </body>
+</html>

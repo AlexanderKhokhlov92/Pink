@@ -1,0 +1,24 @@
+.photo-catalog-tagline_tagline-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 49px;
+  color: $text-color;
+}
+
+@media (min-width: $photo-catalog-tablet-width) {
+  .photo-catalog-tagline_tagline-text {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 422px;
+    margin-top: 73px;
+  }
+}
+
+@media (min-width: $photo-catalog-desktop-width) {
+  .photo-catalog-tagline_tagline-text {
+    margin-top: 67px;
+  }
+}

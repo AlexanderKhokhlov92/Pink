@@ -1,0 +1,29 @@
+.yandex-map {
+  height: 200px;
+  width: 100%;
+}
+
+.map {
+  position: relative;
+}
+
+.map-svg {
+  position: absolute;
+  z-index: 1;
+}
+
+@media (min-width: $tablet-width) {
+  .yandex-map {
+    height: 374px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .yandex-map {
+    height: 502px;
+  }
+  .map {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

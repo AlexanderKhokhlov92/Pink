@@ -1,0 +1,228 @@
+.order-table {
+  background-color: $basic-grey;
+  margin-top: 45px;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    background: linear-gradient(to right bottom, #fff 50%, #f2f2f2 50%);
+  }
+}
+
+.order-table_table {
+  padding-top: 120px;
+  width: 800px;
+  left: 1px;
+  position: absolute;
+  transition: 1s;
+}
+
+.order-table_table-header {
+  height: 94px;
+  width: 280px;
+  background-color: $text-color;
+  &:first-child {
+    display: none;
+  }
+}
+
+.order-table_table-cell {
+  height: 59px;
+  width: 280px;
+  background-color: $white;
+  &:first-child {
+    display: none;
+  }
+}
+
+.order-table_wrapper {
+  width: 320px;
+  overflow: hidden;
+  position: relative;
+  height: 410px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.order-table_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.order-table_price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.order-table_green-check-mark {
+  display: block;
+}
+.order-table_red-check-mark {
+  display: block;
+}
+.order-table_content-wrapper {
+  display: flex;
+  width: 240px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-table_text-content {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+  text-transform: uppercase;
+}
+
+.order-table_buttons {
+  margin: 0 auto;
+  margin-top: -50px;
+  width: 50px;
+  padding-bottom: 49px;
+  z-index: 1;
+  position: relative;
+}
+
+.order-table_button {
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: $text-color;
+  border: 3px solid $basic-grey;
+  cursor: pointer;
+  &:checked {
+    border: 3px solid $text-color;
+    background-color: $white;
+  }
+}
+
+.breadcrumbs-table-button_list {
+  display: grid;
+  width: 62px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 13px;
+  margin: 0 auto;
+  margin-top: 44px;
+  padding-bottom: 44px;
+}
+
+@media (min-width: $tablet-width) {
+  .order-table {
+    padding-bottom: 50px;
+  }
+
+  .order-table_wrapper {
+    width: 612px;
+    margin: 0 auto;
+  }
+
+  .order-table_text-content {
+    display: none;
+  }
+  .order-table_table-cell {
+    height: 59px;
+    width: 153px;
+    background-color: $white;
+    &:first-child {
+      display: block;
+      width: 153px;
+    }
+  }
+  .order-table_table-header {
+    height: auto;
+    width: 153px;
+    background-color: $text-color;
+    &:first-child {
+      width: 153px;
+      display: block;
+      background-color: transparent;
+    }
+  }
+  .order-table_buttons {
+    display: none;
+  }
+  .order-table_title {
+    margin-top: 9px;
+  }
+  .order-table_price {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .order-table_text-content--first {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+    margin-left: 15px;
+    padding-top: 16px;
+  }
+  .order-table_content-wrapper {
+    width: auto;
+    justify-content: center;
+  }
+  .order-table_table {
+    width: 612px;
+    margin: 0 auto;
+    transition: none;
+    transform: translate(none);
+  }
+  .breadcrumbs-table-button_list {
+    display: none;
+  }
+}
+@media (min-width: $desktop-width) {
+  .order-table {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    margin-top: 76px;
+  }
+  .order-table_table-cell {
+    width: 233px;
+    &:first-child {
+      width: 233px;
+    }
+  }
+  .order-table_table-header {
+    height: 94px;
+    width: 233px;
+    &:first-child {
+      width: 233px;
+    }
+  }
+  .order-table_table {
+    width: 932px;
+  }
+  .order-table_wrapper {
+    width: 932px;
+    height: 470px;
+  }
+  .order-table_price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .order-table_title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

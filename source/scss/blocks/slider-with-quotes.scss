@@ -1,0 +1,150 @@
+.slider-quotes {
+  margin-top: -36px;
+  background-color: $white;
+}
+
+.slider-quotes_quote-image {
+  display: none;
+}
+
+.slider-quotes_slider-list {
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+}
+.slide {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide_author {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.slide_author-description {
+  display: none;
+}
+
+.slide_quote {
+  min-width: 320px;
+  max-width: 660px;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 31px;
+  font-size: 14px;
+}
+
+.breadcrumbs_radio-button {
+  width: 12px;
+  height: 12px;
+  outline: none;
+  appearance: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $text-color;
+  border: 3px solid $white;
+  opacity: 0.3;
+  &:checked {
+    border: 3px solid $text-color;
+    background-color: $white;
+    opacity: 1;
+  }
+}
+.breadcrumbs_list {
+  display: grid;
+  width: 62px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 13px;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+
+.left-arrow {
+  display: none;
+}
+
+.right-arrow {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .slide_quote {
+    font-size: 18px;
+    order: -1;
+    margin-top: 109px;
+  }
+  .slide_author-description {
+    display: block;
+    text-align: center;
+    margin-top: 17px;
+  }
+  .breadcrumbs_list {
+    margin-top: 49px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-quotes_quote-image {
+    display: block;
+    width: 79px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .slide_author {
+    font-size: 24px;
+  }
+  .slide_quote {
+    margin-top: 58px;
+  }
+  .breadcrumbs_list {
+    display: none;
+  }
+
+  .slide {
+    position: relative;
+  }
+  .left-arrow {
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 130px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.5);
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .right-arrow {
+    display: block;
+    position: absolute;
+    right: 130px;
+    top: 70px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      transform: scale(1.3);
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

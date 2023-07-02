@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pink</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="page-body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <a class="main-nav_logo" href="index.html"
+          ><picture>
+            <!-- Изображение для экрана мобильного телефона -->
+            <source
+              media="(max-width: 650px)"
+              srcset="img/pink.svg"
+              width="74px"
+              height="23px"
+            />
+
+            <!-- Изображение для экрана планшета -->
+            <source
+              media="(min-width: 651px) and (max-width: 1185px)"
+              srcset="img/logotype-white-tablet.svg"
+              width="145px"
+              height="40px"
+            />
+
+            <!-- Изображение для рабочего стола -->
+            <source
+              media="(min-width: 1185px)"
+              srcset="img/logotype-desktop.svg"
+              width="147px"
+              height="40px"
+            />
+
+            <!-- Изображение по умолчанию для старых браузеров -->
+            <img
+              src="img/logotype-desktop.svg"
+              alt="Логити приложения Pink"
+              width="147px"
+              height="40px"
+            /> </picture
+        ></a>
+
+        <!-- Меню сайта -->
+        <ul class="main-nav_list">
+          <li class="main-nav_list-item">
+            <a href="index.html" class="main-nav_link">Главная</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="photo-catalog.html" class="main-nav_link">Фотографии</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="#" class="main-nav_link">Конкурс</a>
+          </li>
+          <li class="main-nav_list-item">
+            <a href="" class="main-nav_link">HTML Academy</a>
+          </li>
+        </ul>
+
+        <!-- копка бургер для мобильного меню -->
+        <button class="main-nav_burger-button">
+          <div class="main-nav_burger-icon"></div>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="photo-catalog-hero">
+        <h2 class="photo-catalog-hero_title --for-form">
+          Конкурс на самое безбашенное путешествие с Пинк
+        </h2>
+        <p class="photo-catalog-hero_description description--for-form">
+          Поделитесь своей историей и получите шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!
+        </p>
+      </section>
+      <section class="form">
+        <form class="form_form" action="">
+          <ul class="full-name-list">
+            <li class="full-name-list-item">
+              <label
+                class="full-name-list-item_label --text-label"
+                for="lastname"
+                >Фамилия:</label
+              ><input
+                required
+                class="full-name-list-item_input --text-input"
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Укажите фамилию *"
+              />
+            </li>
+            <li class="full-name-list-item">
+              <label class="full-name-list-item_label --text-label" for="name"
+                >Имя:</label
+              ><input
+                required
+                class="full-name-list-item_input --text-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Введите ваше имя *"
+              />
+            </li>
+            <li class="full-name-list-item">
+              <label
+                class="full-name-list-item_label --text-label"
+                for="surname"
+                >Отчество:</label
+              ><input
+                class="full-name-list-item_input --text-input"
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Ну и отчество тоже"
+              />
+            </li>
+          </ul>
+          <fieldset class="form_checkbox">
+            <legend class="form_checkbox-legend">
+              Ваши безбашенные достижения в путешествии
+            </legend>
+            <ul class="checkbox-list">
+              <li class="checkbox-list_item">
+                <input
+                  class="checkbox-list_checkbox"
+                  type="checkbox"
+                  name="checkbox-1"
+                  id="checkbox-1"
+                /><label class="checkbox-list_checkbox-label" for="checkbox-1"
+                  >Сделал селфи с акулой</label
+                >
+              </li>
+              <li class="checkbox-list_item">
+                <input
+                  class="checkbox-list_checkbox"
+                  type="checkbox"
+                  name="checkbox-2"
+                  id="checkbox-2"
+                /><label class="checkbox-list_checkbox-label" for="checkbox-2"
+                  >Обгорел на пляже</label
+                >
+              </li>
+              <li class="checkbox-list_item">
+                <input
+                  class="checkbox-list_checkbox"
+                  type="checkbox"
+                  name="checkbox-3"
+                  id="checkbox-3"
+                /><label class="checkbox-list_checkbox-label" for="checkbox-3"
+                  >Видел Чака Норриса</label
+                >
+              </li>
+              <li class="checkbox-list_item">
+                <input
+                  class="checkbox-list_checkbox"
+                  type="checkbox"
+                  name="checkbox-4"
+                  id="checkbox-4"
+                /><label class="checkbox-list_checkbox-label" for="checkbox-4"
+                  >Накупил сувениров</label
+                >
+              </li>
+              <li class="checkbox-list_item">
+                <input
+                  class="checkbox-list_checkbox"
+                  type="checkbox"
+                  name="checkbox-5"
+                  id="checkbox-5"
+                /><label class="checkbox-list_checkbox-label" for="checkbox-5"
+                  >Удержал башню</label
+                >
+              </li>
+              <li class="checkbox-list_item">
+                <input
+                  class="checkbox-list_checkbox"
+                  type="checkbox"
+                  name="checkbox-6"
+                  id="checkbox-6"
+                /><label class="checkbox-list_checkbox-label" for="checkbox-6"
+                  >Разгромил отель</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contats">
+            <legend class="contacts_legend">контактная информация</legend>
+            <ul class="contats_list">
+              <li class="contats_list-item">
+                <input
+                  class="contats_list-input --text-input"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder="Номер, пожалуйста"
+                /><label
+                  class="contats_list-input-label --text-label --icon-phone"
+                  for="tel"
+                  >НОМЕР ТЕЛЕФОНА</label
+                >
+              </li>
+              <li class="contats_list-item">
+                <input
+                  class="contats_list-input --text-input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Введите почту *"
+                /><label
+                  class="contats_list-input-label --text-label --icon-email"
+                  for="email"
+                  >АДРЕС ПОЧТЫ</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="radio-buttons">
+            <legend class="radio-buttons_legend">
+              С каким приложением путешествовали?
+            </legend>
+            <ul class="radio-buttons_list">
+              <li class="radio-buttons_list-item">
+                <input
+                  class="radio-buttons_radio"
+                  type="radio"
+                  name="radio-button"
+                  id="radio-button-1"
+                  checked
+                /><label class="radio-buttons_radio-label" for="radio-button-1"
+                  >Pink для iOS</label
+                >
+              </li>
+              <li class="radio-buttons_list-item">
+                <input
+                  class="radio-buttons_radio"
+                  type="radio"
+                  name="radio-button"
+                  id="radio-button-2"
+                /><label class="radio-buttons_radio-label" for="radio-button-2"
+                  >Pink на Android</label
+                >
+              </li>
+              <li class="radio-buttons_list-item">
+                <input
+                  class="radio-buttons_radio"
+                  type="radio"
+                  name="radio-button"
+                  id="radio-button-3"
+                /><label class="radio-buttons_radio-label" for="radio-button-3"
+                  >Windows Phone</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="comment">
+            <legend class="comment_legend">ОПИШИТЕ СВОИ ЭМОЦИИ</legend>
+            <textarea
+              placeholder="Можно прям в красках, не стесняясь в выражениях"
+              class="comment_textarea --text-input"
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <div class="form_submit-button-wrapper">
+            <input class="form_submit-button" type="submit" name="" id="" />
+            <p class="form_submit-description">
+              <span class="pink-star">*</span> — обязательные
+              <span class="desktop-description">для заполнения</span> поля
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="footer_logo-link" href="index.html"
+        ><img class="footer_logo" src="img/logotype-blue-tablet.svg" alt=""
+      /></a>
+      <ul class="social-list">
+        <li class="social-list_item">
+          <a class="social-list_link" href=""
+            ><img
+              class="social-list_icon-twitter"
+              src="img/twitter.svg"
+              alt="Twitter"
+          /></a>
+        </li>
+        <li class="social-list_item">
+          <a class="social-list_link" href=""
+            ><img
+              class="social-list_icon-facebook"
+              src="img/facebook.svg"
+              alt="Facebook"
+          /></a>
+        </li>
+        <li class="social-list_item">
+          <a class="social-list_link" href=""
+            ><img
+              class="social-list_icon-youtube"
+              src="img/youtube.svg"
+              alt="YouTube"
+          /></a>
+        </li>
+      </ul>
+      <div class="footer_copyright">
+        <p class="footer_copyright-text">Разработано</p>
+        <svg
+          width="27"
+          height="34"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            class="svg-icon"
+            d="M13.643.016L13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256zm0-11.564l-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237z"
+          />
+        </svg>
+      </div>
+    </footer>
+    <script src="js/burger-menu.min.js"></script>
+    <script src="js/nav.min.js"></script>
+  </body>
+</html>

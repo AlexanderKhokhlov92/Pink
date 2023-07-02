@@ -1,0 +1,148 @@
+.main-header {
+  background-image: url('../../img/hand-with-iphone-mobile.png'),
+    url('../../img/back-tablet.webp');
+  background-size: 320px 286px, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom center, center;
+  height: 427.59px;
+}
+
+.main-header_title {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  text-align: center;
+  max-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  color: $white;
+}
+
+.download-buttons {
+  width: 100%;
+  background-color: $dark-grey-2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 320px;
+}
+.download-buttons_download-button {
+  padding: 21px 39px;
+  border-radius: 29px;
+  border: 3px solid $white;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 28px;
+  position: relative;
+  z-index: 2;
+  &:hover {
+    background-color: $white;
+  }
+  &:hover > .download-buttons_download-button-description {
+    color: $basic-pink;
+  }
+  &:active > .download-buttons_download-button-description {
+    opacity: 0.3;
+  }
+}
+.download-buttons_download-button-description {
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.download-buttons_list {
+  display: grid;
+  grid-template-columns: 47px 43px 44px;
+  gap: 35px;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.download-buttons_description {
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 28px;
+  padding-bottom: 17px;
+}
+
+.download-buttons_button {
+  display: block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.download-buttons_android-icon {
+  margin-top: 7px;
+}
+.download-buttons_microsoft-icon {
+  margin-top: 7px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    background-image: url('../../img/hand-with-iphone-mobile-tablet.png'),
+      url('../../img/back-tablet.webp');
+    background-size: 660px 545px, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, center;
+    height: 619px;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 300px) 1fr;
+    column-gap: 20px;
+  }
+  .download-buttons {
+    background-color: transparent;
+    margin-top: 0;
+  }
+  .main-header_title {
+    grid-column: 2;
+    font-size: 40px;
+    line-height: 120%;
+    max-width: 200px;
+    padding-top: 0px;
+    margin-top: 90px;
+  }
+  .download-buttons {
+    grid-column: 2;
+  }
+  .download-buttons_download-button {
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-top: -39px;
+  }
+  .download-buttons_description {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+    max-width: none;
+    margin-top: 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    height: 853px;
+    position: relative;
+    margin-top: -114px;
+    background-image: url('../../img/hand-with-iphone-mobile-desktop.png'),
+      url('../../img/back-desktop.webp');
+    background-size: 1050px 645px, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right, bottom;
+    grid-template-columns: 1fr repeat(3, 300px) 1fr;
+  }
+  .main-header_title {
+    max-width: 300px;
+    font-size: 50px;
+    margin-top: 228px;
+  }
+}
