@@ -1,0 +1,5 @@
+Учебный макет htmlacademy
+(html5, css3, js, препроцессор sass, сборка gulp, адаптивная верстка, mobile first)
+npm i - установка зависимостей
+gulp - запуск
+gilp build - сборка проекта
