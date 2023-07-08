@@ -1,6 +1,6 @@
 {
   "name": "gulp-build-start-pack",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "through2": "^4.0.2"
   }
 }

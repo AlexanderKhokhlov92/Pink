@@ -1,4 +1,5 @@
 const { src, dest, watch, parallel, series } = require('gulp');
+const fs = require('fs');
 
 const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
@@ -16,6 +17,7 @@ const svgSprite = require('gulp-svg-sprite');
 const rename = require('gulp-rename');
 const replace = require('gulp-replace');
 const sourcemaps = require('gulp-sourcemaps');
+const through2 = require('through2');
 
 function fonts() {
   return src('source/fonts/src/*.*')
@@ -43,7 +45,7 @@ function images() {
 }
 
 function sprite() {
-  return src('sourse/img/*.svg')
+  return src('source/img/*.svg')
     .pipe(
       svgSprite({
         mode: {
@@ -89,8 +91,17 @@ function watching() {
   watch(['source/*.html']).on('change', browserSync.reload);
 }
 
-function cleanBuild() {
-  return src('build').pipe(clean());
+function cleanDocs() {
+  return src('docs', { allowEmpty: true })
+    .pipe(clean({ force: true }))
+    .pipe(
+      through2.obj(function (file, _, cb) {
+        if (!fs.existsSync('docs')) {
+          fs.mkdirSync('docs');
+        }
+        cb(null, file);
+      })
+    );
 }
 
 function building() {
@@ -99,13 +110,12 @@ function building() {
       'source/css/style.min.css',
       'source/img/*.*',
       'source/img/*.svg',
-      //   'source/img/dist/sprite.svg',
       'source/fonts/*.*',
       'source/js/*.min.js',
       'source/**/*.html',
     ],
     { base: 'source' }
-  ).pipe(dest('build'));
+  ).pipe(dest('docs'));
 }
 
 exports.styles = styles;
@@ -114,7 +124,7 @@ exports.watching = watching;
 exports.images = images;
 exports.sprite = sprite;
 exports.fonts = fonts;
-exports.cleanBuild = cleanBuild;
+exports.cleanDocs = cleanDocs;
 
-exports.build = series(cleanBuild, building);
+exports.build = series(cleanDocs, building);
 exports.default = parallel(styles, scripts, watching);
